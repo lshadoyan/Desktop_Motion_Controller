@@ -1,0 +1,29 @@
+[path]
+action_array_dir = "./configs/action.json"
+numpy_dir = "./numpy_dataset"
+np_name = 'flattened.npy'
+frames_dir = "./video_dataset_3"
+saved_model = "./model/action_recognition_model.pth"
+action_scripts = "./action_scripts"
+
+[params]
+input_dim = 63
+hidden_dim = 100
+num_layers = 3
+batch_size = 16
+num_epochs = 100
+confidence = 0.9
+
+[video]
+frames_num = 30
+num_vids = 60
+webcam_num = 0
+
+[ACTIONS]
+threshold = 0.05
+deadzone = 0.0001
+scale_factor = 0.8
+margin = 0.1
+scroll_multiplier = 10
+mouse_action_name = "mouse"
+window_action_name = "window_movement"
